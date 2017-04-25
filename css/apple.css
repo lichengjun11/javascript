@@ -1,0 +1,85 @@
+/** {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*}*/
+/*#nav {*/
+/*height: 44px;*/
+/*background:#000;*/
+/*opacity: 0.8;*/
+/*}*/
+/*#nav .content {*/
+/*color:white;*/
+/*width: 1000px;*/
+/*margin: auto;*/
+
+/*}*/
+/*#nav .content ul li {*/
+/*list-style: none;*/
+/*float: left;*/
+/*margin-right: 53px;*/
+/*}*/
+/*#nav .content ul li .last {*/
+/*margin-right: 0;*/
+/*}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+
+}
+
+#nav {
+    height: 44px;
+    background: #000;
+    opacity:20;
+}
+
+#nav .content {
+    color: white;
+    width: 1000px;
+    margin: auto;
+}
+
+#nav .content ul li {
+    list-style: none;
+    float:left;
+
+}
+#nav .content ul li.last {
+    margin-right: 0;
+}
+
+#nav .content a:link {
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    /*line-height: 44px;*/
+    display: inline-block;
+    /*text-align: center;*/
+    padding: 1px 10px 0;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#nav .content a:hover {
+    opacity: 0.65;
+}
+
+
+#banner {
+    height: 496px;
+    background: #ddd;
+}
+
+#product {
+    height: 204px;
+}
+
+#footer {
+    height: 359px;
+    background: #333;
+}

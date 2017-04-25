@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+#box{
+    width: 400px;
+    height: 400px;
+    background: bisque;
+    margin: 20px auto;
+}
+#box1{
+    width: 20px;
+    height: 20px;
+    background: turquoise;
+    border-radius:3px;
+    -webkit-animation: mycss 3s linear 1s infinite alternate;
+}
+@-webkit-keyframes mycss {
+    0% {
+        -webkit-transform: rotate(100deg);
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+    }
+    30% {
+        -webkit-transform: rotate(200deg);
+       width: 40px;
+        height: 40px;
+        margin: auto 50px;
+    }
+    60% {
+        -webkit-transform: rotate(300deg);
+        width: 80px;
+        height: 80px;
+        margin: auto 100px;
+    }
+    100% {
+        -webkit-transform: rotate(400deg);
+        width: 140px;
+        height: 140px;
+        margin:  auto 230px;
+    }
+}

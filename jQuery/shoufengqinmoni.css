@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box{
+    width: 280px;
+    height: auto;
+    margin: 40px auto;
+}
+#box>p{
+/*background: forestgreen;*/
+}
+#box h3 img{
+    float: left;
+    margin: 0 20px 0 10px;
+}
+#box h3 {
+    margin-top: 10px;
+}
+#box dl{
+    display: none;
+}
+#box dl dt{
+    float: left;
+}
+#box dl dd span{
+    color: red;
+}
+#box dl dd{
+    float: right;
+    width: 180px;
+    line-height: 26px;
+
+}

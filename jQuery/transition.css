@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+#box{
+    width: 40px;
+    height: 40px;
+    background: #f8fda4;
+    border: 1px solid blueviolet;
+    opacity: 0.3;
+    border-radius: 10px;
+    -webkit-transform: rotate(0deg);
+   -webkit-transition:all 0.5s ;
+    /*-webkit-transition: width 1s,height 1s,background 1s,opacity 1s,border 1s;*/
+    margin: 30px auto;
+}
+#box:hover{
+    width: 400px;
+    height: 400px;
+    background: magenta;
+    border: 10px solid #84fe47;
+    opacity: 1;
+    border-radius: 80px;
+    -webkit-transform: rotate(720deg);
+
+}

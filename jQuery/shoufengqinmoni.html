@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="shoufengqinmoni.css">
+</head>
+<body>
+<div id="box">
+    <p><img src="img/toptitle.png" alt=""></p>
+    <h3>苹果 Iphone6 Plus <img src="img/tea2.jpg" alt=""></h3>
+    <dl style="display: block">
+        <dt><img src="img/shouji_buttom1.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>2698</span></p>
+            <p>你说这手机好吗你说这手机好吗你说这手机好吗你说这手机好吗</p>
+        </dd>
+    </dl>
+    <h3>苹果 Iphone6 Plus <img src="img/tea2.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="img/shouji_buttom2.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>2698</span></p>
+            <p>你说这手机好吗你说这手机好吗你说这手机好吗你说这手机好吗</p>
+        </dd>
+    </dl>
+    <h3>苹果 Iphone6 Plus <img src="img/tea2.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="img/shouji_buttom3.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>2698</span></p>
+            <p>你说这手机好吗你说这手机好吗你说这手机好吗你说这手机好吗</p>
+        </dd>
+    </dl>
+</div>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+    $('h3').click(function () {
+        $('h3').next().hide();
+        $(this).next().show('height:146px');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="shoufengqin.css">
+</head>
+<body>
+<div id="box">
+    <p><img src="img/toptitle.png" alt=""></p>
+    <h3>苹果 IPhone 6 Plus <img src="img/tea2.jpg" alt=""></h3>
+    <dl style="display: block">
+        <dt><img src="img/shouji_buttom1.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>咱这部手机卖的非常快，希望大家速速抢购</p>
+        </dd>
+    </dl>
+    <h3>苹果 IPhone 6 Plus <img src="img/tea2.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="img/shouji_buttom1.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>咱这部手机卖的非常快，希望大家速速抢购</p>
+        </dd>
+    </dl>
+    <h3>苹果 IPhone 6 Plus <img src="img/tea2.jpg" alt=""></h3>
+    <dl>
+        <dt><img src="img/shouji_buttom1.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>咱这部手机卖的非常快，希望大家速速抢购</p>
+        </dd>
+    </dl>
+</div>
+<script src='js/jquery-1.7.2.js'></script>
+<script>
+    $('h3').click(function () { // 做h3的点击事件
+        $('h3').next().hide(); // 一点击h3就让h3下面同级的dl隐藏
+        $(this).next().show('height:146px');//当前的h3的下一个dl显示
+    })
+</script>
+</body>
+</html>s

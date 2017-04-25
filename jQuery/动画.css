@@ -1,0 +1,27 @@
+*{
+    margin: 0;padding: 0;list-style: none;
+}
+#box{
+    width: 2800px;
+    height: 768px;
+    position: absolute;
+    -webkit-animation: mycss 10s linear 3s infinite alternate;
+}
+@-webkit-keyframes mycss {
+    0%{
+        left: 0;
+    }
+   30%{
+        left: -700px;
+    }
+    60%{
+        left: -1400px;
+    }
+    100%{
+        left:-2100px;
+    }
+
+    /*100%{*/
+        /*left: -2880px;*/
+    /*}*/
+}
