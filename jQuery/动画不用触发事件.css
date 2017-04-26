@@ -16,6 +16,21 @@
     border-radius:3px;
     -webkit-animation: mycss 3s linear 1s infinite alternate;
 }
+#box2{
+    width: 20px;
+    height: 20px;
+    background: mediumorchid;
+    border-radius: 5px;
+    -webkit-animation:mycss1 5s linear 1s infinite alternate ;
+}
+@-webkit-keyframes mycss1 {
+    from{
+      -webkit-transform: skew(100deg);
+    }
+    to{
+        -webkit-transform: skew(300deg);
+    }
+}
 @-webkit-keyframes mycss {
     0% {
         -webkit-transform: rotate(100deg);
