@@ -25,3 +25,63 @@
 #box input:checked+label{
     background: url("../jQuery/img/QQ图片20170426144401.png");
 }
+
+
+
+
+#box1{
+    width: 50px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    /*background: red;*/
+}
+#box1 input{
+    position: absolute;
+    opacity: 0;
+}
+#box1 label{
+    width: 50px;
+    height: 30px;
+    display: block;
+    background: url("../jQuery/img/QQ图片20170426144436.png");
+    background-size: 100%;
+    -webkit-transition: all 1s;
+}
+#box1 input:checked+label{
+    background: url("../jQuery/img/QQ图片20170426144422.png");
+    background-size: 100%;
+}
+
+
+
+
+#box2{
+    width: 200px;
+    height: 25px;
+    /*background: red;*/
+    margin: 50px auto;
+}
+#box2 li{
+    float: left;
+    position: relative;
+}
+#box2 input{
+    position: absolute;
+    opacity: 0;
+}
+#box2 label{
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding-left: 30px;
+    background: url("../jQuery/img/QQ图片20170426155411.png") no-repeat;
+    background-position: 0 -25px;
+    /*-webkit-transition: all 1s;*/
+}
+#box2 li input:checked+label{
+    background-position: 0 0;
+}
+
+
+
