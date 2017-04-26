@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+#box{
+    width: 38px;
+    height: 39px;
+    margin: 20px auto;
+    /*background: red;*/
+    position: relative;
+    border-radius: 15px;
+}
+#box input{
+    position: absolute;
+    display: none;
+}
+#box label{
+    width: 38px;
+    height: 39px;
+    display: block;
+    background: url("../jQuery/img/QQ图片20170426144350.png");
+    -webkit-transition: all 1s;
+}
+#box input:checked+label{
+    background: url("../jQuery/img/QQ图片20170426144401.png");
+}

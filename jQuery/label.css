@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+#box {
+    width: 77px;
+    height: 27px;
+    /*background: red;*/
+    margin: 20px auto;
+    position: relative;
+}
+input{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    width: 77px;
+    height: 27px;
+    display: block;
+    /*position: absolute;*/
+    border-radius: 15px;
+    background: url("../img/QQ图片20170426142504.png");
+}
+#box input:checked+label{
+    background-position: -51px 0;
+}
