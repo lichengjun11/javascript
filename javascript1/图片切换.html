@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="图片切换.css">
+</head>
+<body>
+<div id="box">
+    <img src="../img/1.jpg" alt="">
+    <img src="../img/2.jpg" alt="">
+    <img src="../img/3.jpg" alt="">
+    <img src="../img/4.jpg" alt="">
+    <img src="../img/5.jpg" alt="">
+    <img src="../img/6.jpg" alt="">
+    <img src="../img/7.jpg" alt="">
+    <img src="../img/8.jpg" alt="">
+    <img src="../img/9.jpg" alt="">
+    <img src="../img/10.jpg" alt="">
+
+    <span id="left"> < </span>
+    <span id="right"> > </span>
+</div>
+<script>
+    var imgs=document.getElementById('box').getElementsByTagName('img'),
+        lift=document.getElementById('left'),
+        right=document.getElementById('right');
+    var i = 0;
+    right.onclick=function () {
+    for(j=0;j<imgs.length;j++) {
+        imgs[j].style.display='none';
+    }
+    i++;
+        if(i>imgs.length-1) {
+            i=0;
+        }
+        imgs[i].style.display='block';
+        Console.log(imgs[i]);
+    }
+        var i = 0;
+    lift.onclick=function () {
+        for( var j=0;j<imgs.length;j++) {
+            imgs[j].style.display='none';
+        }
+        i--;
+        if(i<0) {
+            i=imgs.length-1;
+        }
+        imgs[i].style.display='block';
+//        Console.log(imgs[i]);
+    }
+
+</script>
+<!--<script>-->
+   <!--var imgs=document.getElementById('box').getElementsByTagName('img'),// 所有的图片&ndash;&gt;-->
+        <!--&lt;!&ndash;left=document.getElementById('left'), // 左按钮&ndash;&gt;-->
+       <!--&lt;!&ndash;right=document.getElementById('right'); // 右按钮&ndash;&gt;-->
+<!---->
+    <!--var i= 0;-->
+    <!--right.onclick=function () {-->
+        <!--for(var j=0;j<imgs.length;j++) {-->
+            <!--imgs[j].style.display='none';-->
+        <!--}-->
+        <!--i++;-->
+        <!--if(i>imgs.length-1) {-->
+            <!--i=0;-->
+        <!--}-->
+        <!--imgs[i].style.display='block';-->
+        <!--console.log(imgs[i]);-->
+    <!--}-->
+
+   <!--left.onclick=function () {-->
+       <!--for(var j=0;j<imgs.length;j++) {-->
+           <!--imgs[j].style.display='none';-->
+       <!--}-->
+       <!--i&#45;&#45;;-->
+       <!--if(i<0) {-->
+           <!--i=imgs.length-1;-->
+       <!--}-->
+       <!--imgs[i].style.display='block';-->
+       <!--console.log(imgs[i]);-->
+
+</body>
+</html>

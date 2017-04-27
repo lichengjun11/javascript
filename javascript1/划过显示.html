@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="划过图片.css">
+</head>
+<body>
+<div id="box">
+    <ul id="img">
+        <li><p>奶粉歌私房话</p><img src="../img/1.jpg" alt=""></li>
+        <li><p>奶粉歌私房话</p><img src="../img/2.jpg" alt=""></li>
+        <li><p>奶粉歌私房话</p><img src="../img/3.jpg" alt=""></li>
+    </ul>
+</div>
+<script>
+    // 先获取元素
+    var lis=document.getElementsByTagName('ul')[0].getElementsByTagName('li');
+        // 再做个for循环把li遍历出来
+    for(i=0;i<lis.length;i++){
+        lis[i].onmouseover=function () { // 做个当鼠标划过的函数
+        this.getElementsByTagName('p')[0].style.display='block';   // 在函数中把p标签显示
+        this.style.border='2px solid red'; //  在函数中做li的红色边框
+            this.getElementsByTagName('p')[0].color='red';
+        }
+        lis[i].onmouseout=function () {  // 当鼠标离开的函数
+            this.style.border='2px solid gray';  // this指代当前  让边框变为原来色
+            this.getElementsByTagName('p')[0].style.display='none'; //  让p标签隐藏
+            this.getElementsByTagName('p')[0].color='gray';
+        }
+
+    }
+
+</script>
+</body>
+</html>

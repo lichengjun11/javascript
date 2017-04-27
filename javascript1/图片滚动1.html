@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        #box{
+            width: 300px;
+            height: 200px;
+            background: greenyellow;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+        #con{
+            width: 600px;
+            height: 200px;
+        }
+        #con li{
+            width: 300px;
+            height: 200px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul id="con">
+        <li><img src="../img/1.jpg" alt=""></li>
+        <li><img src="../img/2.jpg" alt=""></li>
+        <li><img src="../img/3.jpg" alt=""></li>
+    </ul>
+
+</div>
+<script>
+    var con=document.getElementById('con');
+    function auto() {
+        var cleft=parseInt(con.style.marginLeft);
+        if(!cleft){
+            cleft=0;
+        }if(cleft>-600){
+            con.style.marginLeft=cleft-1+'px'
+        }else{
+            con.style.marginLeft=0;
+        }
+    }
+    setInterval(auto,5);
+</script>
+</body>
+</html>

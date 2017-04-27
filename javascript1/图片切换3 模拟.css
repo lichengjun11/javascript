@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box{
+    width: 600px;
+    height: auto;
+    margin: 40px auto;
+
+}
+#box ul{
+    height: 70px;
+    background: yellow;
+}
+#box ul li{
+    line-height: 70px;
+    padding: 0  20px;
+    float: left;
+    border-right: 1px solid white;
+    color: white;
+}
+#con{
+    width: 600px;
+    height: auto;
+    background: darkmagenta;
+}
+ #con p{
+    width: 560px;
+    height: auto;
+    padding: 20px;
+    /*overflow: hidden;*/
+    display: none;
+    background: green;
+
+}
+

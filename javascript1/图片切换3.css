@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#box{
+    width: 500px;
+    height: auto;
+    /*background: rebeccapurple;*/
+    margin: 40px auto;
+    border: 8px solid #f884fe;
+}
+ul{
+    height: 70px;
+    background: #f884fe;
+}
+li{
+    line-height: 70px;
+    padding:  0 25px;
+    float: left;
+    border-right: 2px solid white;
+
+}
+#con {
+    width: 500px;
+    height: auto;
+
+}
+
+p{
+    height:auto ;
+    width: 460px;
+    padding: 20px;
+    /*overflow: hidden;*/
+    display: none;
+    background:silver;
+}

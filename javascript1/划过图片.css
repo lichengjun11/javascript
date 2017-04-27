@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box{
+    width: 700px;
+    height: auto;
+    margin: 40px auto;
+}
+ul{
+    width: 700px;
+    height: auto;
+}
+li{
+    width: 700px;
+    height: 320px;
+    position: relative;
+    border: 2px solid gray;
+}
+p{
+    width: 700px;
+    height: 50px;
+    line-height: 50px;
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    color: black;
+    display: none;
+    background: rgba(0,200,0,0.5);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="图片切换2.css">
+</head>
+<body>
+<div id="box">
+<div id="xinwen">
+    <ul>
+        <li style="background: red">新闻</li>
+        <li>游戏</li>
+        <li>图片</li>
+    </ul>
+</div>
+    <div id="con">
+        <p>你好你好你好你好从停停停停停停停停停停停哈哈哈哈哈哈哈哈哈</p>
+        <p>滴答滴答滴答滴答滴答滴答滴答滴答滴答滴滴答滴答滴答滴答滴答</p>
+        <p>笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻嘻笑嘻</p>
+    </div>
+</div>
+<script>
+    var lis=document.getElementById('xinwen').getElementsByTagName('li'),
+        con=document.getElementById('con').getElementsByTagName('p');
+        //点击每个导航，让他出现所对应的内容
+    for(var i = 0;i < lis.length; i ++){
+        lis[i].index=i;//给一个索引
+//        console.log(lis[i].index); //?
+        // 循环出每个li  添加点击事件
+        lis[i].onclick=function () {
+            // 让所有的p隐藏
+            for(var j=0; j < con.length; j++){
+                con[j].style.display='none'; //隐藏
+                lis[j].style.background='';
+            }
+            con[this.index].style.display='block';
+            lis[this.index].style.background='red';
+
+
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

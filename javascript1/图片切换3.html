@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="图片切换3.css">
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li style="background:silver ">Tab1</li>
+        <li>Tab2</li>
+        <li>Tab3</li>
+    </ul>
+    <div id="con">
+        <p style="display: block">反反复复反反复复反反复复反反复复反反复复反反复复反反复复分反反
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分反反
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分反反
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分反反
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分
+            复复反反复复反反复复反反复复反反复复反反复复反反复复分</p>
+        <p>某某某某某某某某某某某某某某某某某某某某某某某密某某某某某某某某某
+            某某某某某某某某某某某某密密麻麻吗密麻麻吗吗某某某某某某某
+            某某某某某某某某某某某某密密麻麻吗密麻麻吗吗某某某某某某某
+            某某某某某某某某某某某某密密麻麻吗密麻麻吗吗某某某某某某某
+            某某某某某某某某某某某某密密麻麻吗密麻麻吗吗某某某某某某某
+            某某某某某某某某某某某某某某密密麻麻吗</p>
+        <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+            啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+            啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+            啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+            啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+            啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+            啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+    </div>
+    </div>
+    <script>
+        var lis=document.getElementById('box').getElementsByTagName('li'),
+            con=document.getElementById('con').getElementsByTagName('p');
+        for(var i = 0;i < lis.length; i ++) {
+            lis[i].index = i;//给一个索引
+//        console.log(lis[i].index); //?
+            // 循环出每个li  添加点击事件
+            lis[i].onclick = function () {
+                // 让所有的p隐藏
+                for (var j = 0; j < con.length; j++) {
+                    con[j].style.display = 'none'; //隐藏
+                    lis[j].style.background = '';
+                }
+                con[this.index].style.display = 'block';
+                lis[this.index].style.background ='silver';
+            }
+        }
+
+
+    </script>
+</div>
+
+</body>
+</html>

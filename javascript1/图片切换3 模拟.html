@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/图片切换3%20模拟.css">
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li style="background: green">你说</li>
+        <li>她说</li>
+        <li>我说</li>
+    </ul>
+    <div id="con">
+    <p style="display: block">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+        啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+        啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+    <p>停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停
+        停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停停</p>
+    <p>某某某某某某某某某某某某某某某某某某某某某某某</p>
+    </div>
+</div>
+<script>
+  var lis=document.getElementById('box').getElementsByTagName('li'),
+      con=document.getElementById('con').getElementsByTagName('p');
+    for(var i=0;i<lis.length;i++){
+        lis[i].index=i;
+    lis[i].onclick=function () {
+        for( var j=0;j<con.length;j++){
+            con[j].style.display='none';
+            lis[j].style.background='';  //?
+        }
+        con[this.index].style.display='block';
+        lis[this.index].style.background='blue';
+    }
+
+  }
+</script>
+</body>
+</html>

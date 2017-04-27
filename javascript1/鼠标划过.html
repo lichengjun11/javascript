@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="鼠标划过.css">
+</head>
+<body>
+<div id="box">
+    <div id="imgs">
+        <ul>
+            <li><img src="../img/1.jpg" alt=""></li>
+            <li><img src="../img/2.jpg" alt=""></li>
+            <li><img src="../img/3.jpg" alt=""></li>
+            <li><img src="../img/4.jpg" alt=""></li>
+            <li><img src="../img/5.jpg" alt=""></li>
+            <li><img src="../img/6.jpg" alt=""></li>
+            <li><img src="../img/7.jpg" alt=""></li>
+            <li><img src="../img/8.jpg" alt=""></li>
+            <li><img src="../img/9.jpg" alt=""></li>
+            <li><img src="../img/10.jpg" alt=""></li>
+        </ul>
+    </div>
+    <ol id="num">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ol>
+    <span id="left"> < </span>
+    <span id="right"> > </span>
+</div>
+<script>
+    var imgs = document.getElementById('imgs').getElementsByTagName('li');
+    var num = document.getElementById('num').getElementsByTagName('li');
+    var left=document.getElementById('left');
+    var right=document.getElementById('right');
+      //  自动播
+    var k = 0;
+    function auto() {
+        for(var i =0;i<num.length;i++){
+            imgs[i].style.display='none';
+            num[i].style.background= 'none';
+        }
+        imgs[k].style.display='block';
+        num[k].style.background='red';
+        k++;
+        if(k>num.length-1){
+            k=0;
+        }
+    }
+    sl=setInterval(auto,1000);
+
+    // 划过出现对应的图片
+    for (var i = 0; i < num.length; i++) {
+        num[i].index = i;
+        num[i].onmouseover = function () {
+            clearInterval(sl);
+
+
+            // 鼠标划过数字的时候，让所有的图片隐藏，让数字的背景清空
+            for (var j = 0; j < imgs.length; j++) {
+                num[j].style.background = 'none';
+                imgs[j].style.display = 'none';
+            }
+            imgs[this.index].style.display = 'block';
+            num[this.index].style.background = 'red';
+        }
+        num[i].onmouseout=function () {
+            k=this.index;
+            sl=setInterval(auto,1000);
+        }
+    }
+    left.onclick=function () {
+        clearInterval(sl);
+
+        imgs[i].style.display='none';
+    }
+    i--;
+    if(i<0){
+        i=imgs.length-1;
+    }
+    imgs[i].style.display='block';
+
+</script>
+</body>
+</html>

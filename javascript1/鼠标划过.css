@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box{
+    width: 700px;
+    height: 320px;
+    margin: 30px auto;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+}
+#box li{
+float: left;
+}
+#num{
+    width: 200px;
+    height: 20px;
+    background: greenyellow;
+    position: absolute;
+    right: 300px;
+    bottom: 40px;
+}
+#num li{
+
+    width: 18px;
+    height: 18px;
+    border: 1px solid yellow;
+    float: left;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+span {
+    width: 40px;
+    height: 80px;
+    background: green;
+    border-radius: 10px;
+    color: #f8fda4;
+    display: block;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+}
+#left{
+    left: 30px;
+    bottom: 110px;
+}
+#right{
+    right: 30px;
+    bottom:110px ;
+}
