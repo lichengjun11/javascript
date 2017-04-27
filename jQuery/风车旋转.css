@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+#box{
+    width: 100px;
+    height: 100px;
+    /*background: blanchedalmond;*/
+    margin: 30px auto;
+    position: relative;
+    -webkit-animation: css 1s linear 1s infinite normal;
+}
+#box>div{
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 40px;
+    /*background: greenyellow;*/
+    -webkit-transform-origin: center bottom;
+}
+#box .round_top div{
+    background: aqua;
+    margin: auto;
+}
+#box .round_right div{
+    background: tomato;
+    margin: auto;
+}
+#box .round_right{
+    -webkit-transform: rotateZ(90deg);
+}
+#box .round_bottom div{
+    background: blueviolet;
+    margin: auto;
+}
+#box .round_bottom{
+    -webkit-transform: rotateZ(180deg);
+}
+#box .round_left div{
+    background: hotpink;
+    margin: auto;
+}
+#box .round_left{
+    -webkit-transform: rotateZ(270deg);
+}
+.round1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: mediumblue;
+}
+.round2{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.round3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+     opacity: 0.6;
+}
+.round4{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+@-webkit-keyframes css {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
