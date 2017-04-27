@@ -2,23 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Title</title>3
     <script>
-        var patt1=/e/;
-        console.log(patt1.test("hello"));
-        var patt2=/l/g;
-        patt1.compile('l','g'); // global 全部
-
-        var result=patt1.exec("hello");
+        var patt= new RegExp('e');
+        console.log(patt.test("hello"));//  字符串中只要含有e，就会返回true
+        console.log(patt.exec("hie"));
+        var pat = new RegExp('l','g');
+        console.log(pat.exec("hello"));
+        result=pat.exec("hello");
         do{
             console.log(result);
-            result = patt1.exec("hello");
-        } while(result != null);
-        var patt3 = /e/i;
-        console.log(patt3.test('HELLO'));
+            result=pat.exec("hello");
+        }while(result!=null);
 
-        var patt4 = /w3school/i;
-        console.log('Visit W3School...'.match(patt4));
+
+
+
+
+
+
+//        var patt1=/e/;
+//        console.log(patt1.test("hello"));
+//        var patt2=/l/g;
+//        patt1.compile('l','g'); // global 全部
+//
+//        var result=patt1.exec("hello");
+//        do{
+//            console.log(result);
+//            result = patt1.exec("hello");
+//        } while(result != null);
+//        var patt3 = /e/i;
+//        console.log(patt3.test('HELLO'));
+//
+//        var patt4 = /w3school/i;
+//        console.log('Visit W3School...'.match(patt4));
     </script>
 </head>
 <body>
